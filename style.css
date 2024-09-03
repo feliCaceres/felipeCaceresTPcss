@@ -1,0 +1,132 @@
+p {
+    font-size: 1.1em;
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+blockquote footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.box-container {
+    margin: 20px;
+}
+
+.box {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 1cap;
+}
+
+.box2 {
+    border: 6px solid #333;
+    background-color: #b3e8ff;
+    box-shadow: 12px 12px 20px;
+}
+
+.relativo {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.absoluto {
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    animation: cambiarColorFondo 1s linear infinite;
+    animation: escalaRotacion 4s ease-in-out infinite;
+}
+
+@keyframes escalaRotacion {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes cambiarColorFondo {
+    0% {
+        background-color: #007bff;
+    }
+    50% {
+        background-color: #28a745;
+    }
+    100% {
+        background-color: #007bff;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #5f5d5d;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    box {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    animation: cambiarColorFondo 1s linear infinite;
+}
